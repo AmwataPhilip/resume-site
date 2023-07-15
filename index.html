@@ -1,159 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<style>
-			body {
-				font-family: Roboto, sans-serif;
-				color: black;
-				background-color: white;
-				text-align: center;
-				margin: 0;
-			}
-			header {
-				text-align: center;
-				padding: 20px;
-				color: black;
-				background-color: paleturquoise;
-			}
-			section {
-				margin: 20px;
-			}
-			h1 {
-				font-size: xx-large;
-			}
-			h3 {
-				color: teal;
-			}
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			.skills {
-				display: flex;
-				justify-content: space-between;
-				padding: 0 20px;
-				flex-wrap: wrap;
-			}
-			.skill {
-				position: relative;
-				margin-bottom: 16px;
-				flex-basis: 30%;
-			}
-			#visitorCount {
-				position: fixed;
-				top: 16px;
-				left: 10px;
-				background-color: white;
-				padding: 5px 10px;
-				display: flex;
-				flex-direction: column;
-				border-radius: 10px;
-				border: 1px solid black;
-				font-weight: 400;
-			}
-			#visitorCountStrong {
-				font-size: x-large;
-				font-weight: bold;
-				color: burlywood;
-			}
-			/* .skill::before {
-				content: "\2713";
-				position: absolute;
-				left: 0;
-				color: black;
-			} */
-		</style>
+		<!--=============== FAVICON ===============-->
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+		<!--=============== REMIXICONS ===============-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+
+		<!--=============== SWIPER CSS ===============-->
+		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+		<!--=============== CSS ===============-->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+
+		<title>Philip Amwata's Professional Resume'</title>
 	</head>
 	<body>
-		<header>
-			<h1>PHILIP AMWATA</h1>
-			<p>Software Developer</p>
-			<p>Cape Town, South Africa</p>
-			<p>philalexander85@gmail.com</p>
-		</header>
-		<section>
-			<h2>PROFESSIONAL SUMMARY</h2>
-			<p>
-				As an experienced Full Stack Developer, I bring more than just technical proficiency to the
-				table - I bring a passion for leveraging technology to resolve complex business challenges.
-				My skill set spans an extensive range of technologies including C#, ASP.NET, .NET, Angular,
-				NodeJs, NestJs, AWS, and Firebase. However, it's not just about knowing these technologies.
-				It's about knowing how to integrate them effectively to deliver solutions that drive
-				business growth and efficiency.
-			</p>
-			<p>
-				Consistently delivering high-quality web and mobile applications that meet and often exceed
-				expectations. These aren't just pieces of software - they're tools that businesses can use
-				to improve their operations, reach a larger audience, and stay competitive in today's
-				digital landscape. What sets me apart is my passion to make a positive impact. I don't just
-				write code - I build comprehensive solutions tailored to your unique needs. Your success is
-				my success, and I look forward to helping your business thrive through the effective use of
-				technology.
-			</p>
-			<h2>SKILL PROFICIENCIES</h2>
-			<div class="skills">
-				<div class="skill">Cloud Migration</div>
-				<div class="skill">Code Review</div>
-				<div class="skill">Data Management</div>
-				<div class="skill">API Development</div>
-				<div class="skill">Project Management</div>
-				<div class="skill">Performance Optimization</div>
-				<div class="skill">System Architecture Design</div>
-				<div class="skill">Automated Testing</div>
-				<div class="skill">Security Best Practices</div>
-			</div>
-		</section>
-		<section>
-			<h2>EMPLOYMENT HISTORY</h2>
-			<h3>SOFTWARE DEVELOPER, SPECNO - SOFTWARE AND DESIGN AGENCY</h3>
-			<h4>Jan. 2021 - Present</h4>
-			<div>
-				<div>Full-Stack Software Development</div>
-				<div>Developing Views using Angular, Typescript, HTML5</div>
-				<div>
-					Data manipulation, state management and storage using RxJs, NGRX, Nodejs with Nestjs,
-					Firebase, MS SQL Server, Postgres and C# .NET
+		<!--==================== HEADER ====================-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#" class="nav__logo">Philip</a>
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list grid">
+						<li class="nav__item">
+							<a href="#home" class="nav__link"><i class="ri-home-5-line"></i>Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link"><i class="ri-trophy-line"></i> Skills</a>
+						</li>
+						<li class="nav__item">
+							<a href="#qualifications" class="nav__link"
+								><i class="ri-book-open-line"></i> Qualifications</a
+							>
+						</li>
+						<li class="nav__item">
+							<a href="#services" class="nav__link"><i class="ri-briefcase-line"></i> Services</a>
+						</li>
+						<li class="nav__item">
+							<a href="#projects" class="nav__link"><i class="ri-file-cloud-line"></i> Projects</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link"><i class="ri-chat-3-line"></i> Contact</a>
+						</li>
+					</ul>
+					<div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
 				</div>
-				<div>Cloud Solutions using AWS and GCP</div>
-				<div>Managing projects and development teams as the Lead Developer</div>
-				<div>Conducting Technical Assessments and Technical Interview</div>
-			</div>
+				<div class="nav__buttons">
+					<!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+					<div class="nav__toggle" id="nav-toggle"><i class="ri-menu-4-line"></i></div>
+				</div>
+			</nav>
+		</header>
 
-			<h3>SOFTWARE DEVELOPER, DIPAR SYSTEMS</h3>
-			<h4>Oct. 2019 - Jan. 2021</h4>
-			<div>
-				<div>Full-Stack Software Development</div>
-				<div>Developing views using AngularJS and jQuery</div>
-				<div>Data manipulation using C# .NET and MSSQL</div>
-				<div>Handling support tickets and change requests</div>
-			</div>
+		<!--==================== MAIN ====================-->
+		<main class="main">
+			<!--==================== HOME ====================-->
+			<section class="home section" id="home">
+				<div class="home__container container grid section__border">
+					<div class="home__data grid">
+						<h1 class="home__title">
+							Hi, I'm Philip<br />
+							Full Stack Developer <br />
+							Aspiring Cloud Solutions Architect <br />
+							Based in South Africa <br />
+						</h1>
+						<div class="home__blob grid">
+							<div class="home__profile">
+								<img src="assets/img/profile.png" alt="home profile" />
+							</div>
+							<!-- <img src="" alt="" class="home__shape-waves" /> -->
+							<!-- <img src="" alt="" class="home__shape-waves" /> -->
+						</div>
+						<ul class="home__social">
+							<a
+								href="https://www.linkedin.com/in/philipamwata/"
+								target="_blank"
+								class="home__social-link"
+								><i class="ri-linkedin-box-line"></i
+							></a>
+							<a href="https://github.com/AmwataPhilip" target="_blank" class="home__social-link"
+								><i class="ri-github-line"></i
+							></a>
+							<a href="https://www.amwatatech.com/" target="_blank" class="home__social-link"
+								><i class="ri-global-line"></i
+							></a>
+						</ul>
+					</div>
+					<div class="home__info">
+						<div>
+							<h3 class="home__info-title">BIOGRAPHY</h3>
+							<p class="home__info-description">
+								I'm an experienced Full Stack Developer who brings more than just technical
+								proficiency to the table - I bring a passion for leveraging technology to resolve
+								complex business challenges. My skill set spans an extensive range of technologies
+								including C#, ASP.NET, .NET, Angular, NodeJs, NestJs, AWS, and Firebase. However,
+								it's not just about knowing these technologies. It's about knowing how to integrate
+								them effectively to deliver solutions that drive business growth and efficiency.
+							</p>
+						</div>
+						<div>
+							<h3 class="home__info-title">CONTACT</h3>
+							<p class="home__info-description">
+								Cape Town, South Africa <br />
+								philalexander85@gmail.com <br />
+								+27 624 411 238 <br />
+							</p>
+						</div>
+						<div>
+							<h3 class="home__info-title">SERVICES</h3>
+							<p class="home__info-description">
+								Application Development <br />
+								Cloud Application Development <br />
+								Cloud Management <br />
+								SaaS Development <br />
+								Training <br />
+								Project Management <br />
+							</p>
+						</div>
+					</div>
+					<div class="home__info">
+						<div>
+							<h3 class="home__info-title">YEARS OF EXPERIENCE</h3>
+							<p class="home__info-number">04+</p>
+						</div>
+						<div>
+							<h3 class="home__info-title">COMPLETED PROJECTS</h3>
+							<p class="home__info-number">15+</p>
+						</div>
+						<div>
+							<h3 class="home__info-title">COMPANIES WORKED WITH</h3>
+							<p class="home__info-number">6+</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			<h3>PYTHON TUTOR, UNIVERSITY OF CAPE TOWN</h3>
-			<h4>Mar. 2019 - Oct. 2019</h4>
-			<div>
-				<div>Tutor students on programming fundamentals using the Python programming language</div>
-				<div>Assess student progress during weekly lab sessions</div>
-				<div>Mark students' practical and theoretical work</div>
-			</div>
-		</section>
-		<section>
-			<h2>EDUCATION</h2>
-			<h3>UNIVERSITY OF CAPE TOWN, CAPE TOWN, WESTERN CAPE</h3>
-			<h4>Mar. 2017 - Dec. 2020</h4>
-			<p>Bachelor of Science, Computer Science and Computer Games Development</p>
-		</section>
+			<!--==================== SKILLS ====================-->
+			<section class="skills section" id="skills"></section>
 
-		<div id="visitorCount">
-			✨ Resume Views
-			<div id="visitorCountStrong"></div>
-		</div>
+			<!--==================== QUALIFICATION ====================-->
+			<section class="qualification section" id="qualification"></section>
 
-		<script>
-			let visitorCount = localStorage.getItem("visitorCount")
-				? parseInt(localStorage.getItem("visitorCount"))
-				: 0;
+			<!--==================== SERVICES ====================-->
+			<section class="services section" id="services"></section>
 
-			visitorCount++;
-			localStorage.setItem("visitorCount", visitorCount);
+			<!--==================== PROJECTS ====================-->
+			<section class="projects section" id="projects"></section>
 
-			document.getElementById("visitorCountStrong").textContent = visitorCount;
-		</script>
+			<!--==================== TESTIMONIAL ====================-->
+			<section class="testimonial section"></section>
+
+			<!--==================== CONTACT ====================-->
+			<section class="contact section" id="contact"></section>
+		</main>
+
+		<!--==================== FOOTER ====================-->
+		<footer class="footer"></footer>
+
+		<!--========== SCROLL UP ==========-->
+
+		<!--=============== SCROLLREVEAL ===============-->
+		<script src=""></script>
+
+		<!--=============== SWIPER JS ===============-->
+		<script src=""></script>
+
+		<!--=============== EMAIL JS ===============-->
+
+		<!--=============== MAIN JS ===============-->
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
