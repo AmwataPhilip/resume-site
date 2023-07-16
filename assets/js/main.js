@@ -1,3 +1,11 @@
+/*=============== Visitor Count ===============*/
+window.onload = function () {
+	fetch("https://llp74j3v63.execute-api.eu-west-1.amazonaws.com/production", { method: "PUT" })
+		.then((response) => response.json())
+		.then((data) => (document.getElementById("visitorCount").textContent = data.body))
+		.catch((error) => console.error("Error:", error));
+};
+
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
 	navToggle = document.getElementById("nav-toggle"),

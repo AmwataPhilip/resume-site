@@ -414,6 +414,10 @@ body.dark-theme {
 	}
 }
 
+.visitor__count {
+	text-align: center;
+}
+
 /*=============== QUALIFICATION ===============*/
 
 /*=============== SERVICES ===============*/
