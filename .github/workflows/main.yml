@@ -23,12 +23,15 @@ jobs:
       id: getfile
       run: |
         echo "::set-output name=files::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | jq -R -s -c 'split("\n") | map(select(length > 0))')"
-      
+
     - name: Sync files to S3
       run: |
         for file in "${{ fromJson(steps.getfile.outputs.files) }}"; do
+          if [[ "$file" == .git* ]]; then
+            continue
+          fi
           if [ -f "$file" ]; then
-            aws s3 cp "$file" "s3://philipamwata.net/$file"
+            aws s3 cp "$file" "s3://bucket-name/$file"
           fi
         done
 
