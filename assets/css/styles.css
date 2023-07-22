@@ -107,11 +107,6 @@ body.dark-theme {
 	--container-color: hsl(207, 4%, 12%);
 }
 
-/*==========
-    Color changes in some parts of
-    the website, in light theme
-==========*/
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
 	max-width: 1024px;
