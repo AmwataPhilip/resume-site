@@ -251,7 +251,6 @@ body.dark-theme {
 /*=============== HOME ===============*/
 .home__container {
 	row-gap: 4rem;
-	padding-top: 2rem;
 }
 
 .home__data {
@@ -416,6 +415,7 @@ body.dark-theme {
 
 .visitor__count {
 	text-align: center;
+	color: mediumblue;
 }
 
 /*=============== QUALIFICATION ===============*/
@@ -505,6 +505,7 @@ body.dark-theme {
 		border-radius: 0;
 		column-gap: 3rem;
 		margin-inline: 1.5rem;
+		max-width: unset;
 		padding: 0;
 	}
 	.nav__link i,
@@ -557,7 +558,7 @@ body.dark-theme {
 		width: 340px;
 	}
 	.home__data {
-		row-gap: 2.5rem;
+		row-gap: 1.8rem;
 	}
 	.home__social {
 		column-gap: 2rem;
