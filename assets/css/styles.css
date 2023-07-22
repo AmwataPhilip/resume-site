@@ -410,7 +410,12 @@ body.dark-theme {
 
 .visitor__count {
 	text-align: center;
+	font-family: var(--title-font);
 	color: mediumblue;
+}
+
+.visitor__count-number {
+	margin-top: 0;
 }
 
 /*=============== QUALIFICATION ===============*/
