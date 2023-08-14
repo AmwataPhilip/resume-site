@@ -108,6 +108,12 @@ body.dark-theme {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.l-section{
+	padding-top: 2rem;;
+}
+.l-hidden{
+	display: none;
+}
 .container {
 	max-width: 1024px;
 	margin-inline: 1.5rem;
@@ -249,7 +255,7 @@ body.dark-theme {
 }
 
 .home__data {
-	row-gap: 1.5rem;
+	row-gap: 1rem !important;
 }
 
 .home__title {
