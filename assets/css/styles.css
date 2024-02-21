@@ -154,10 +154,11 @@ body.dark-theme {
 .appointment_button{
 	width: 100%;
 	text-align: center;
+	padding-top: 1rem;
 }
 
 .border_button{
-	border: 1px gray;
+	border: 1px solid gray;
 }
 
 
