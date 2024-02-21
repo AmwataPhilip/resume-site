@@ -151,19 +151,16 @@ body.dark-theme {
 	margin-bottom: 3rem;
 }
 
-.appointment_button{
-	width: 100%;
-	text-align: center;
-	padding-top: 1rem;
+.main {
+	overflow: hidden; /* For animation */
 }
 
-.border_button{
+.appointment_button{
 	border: 1px solid gray;
 }
 
-
-.main {
-	overflow: hidden; /* For animation */
+.text-center {
+	text-align: center !important;
 }
 
 /*=============== HEADER & NAV ===============*/
